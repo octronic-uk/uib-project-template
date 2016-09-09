@@ -19,7 +19,7 @@ server {
 	listen 80 default_server;
 	listen [::]:80 default_server;
 
-	root /opt/uib-project-template;
+	root /Users/Ashley/Software/uib-project-template.git;
 
 	index index.html;
 
@@ -30,9 +30,13 @@ server {
 	    proxy_pass http://127.0.0.1:9090;
 	}
 
+    # Block the /model directory
+	location /model {
+        deny  all;
+    }
+
     # Static Files
 	location / {
 		try_files $uri $uri/ =404;
 	}
 }
-
