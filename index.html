@@ -20,12 +20,12 @@
         <title>UIB Project Template</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <!-- Libraries -->
-        <script type='text/javascript' src='/lib/js/angular.min.js'></script>
-        <script type='text/javascript' src='/lib/js/angular-ui-router.min.js'></script>
-        <script type='text/javascript' src='/lib/js/angular-animate.min.js'></script>
-        <script type='text/javascript' src='/lib/js/angular-cookies.min.js'></script>
-        <script type='text/javascript' src='/lib/js/angular-touch.min.js'></script>
-        <script type='text/javascript' src='/lib/js/ui-bootstrap-tpls.min.js'></script>
+        <script type='text/javascript' src='/lib/angular/angular.min.js'></script>
+        <script type='text/javascript' src='/lib/angular-ui-router/release/angular-ui-router.min.js'></script>
+        <script type='text/javascript' src='/lib/angular-animate/angular-animate.min.js'></script>
+        <script type='text/javascript' src='/lib/angular-cookies/angular-cookies.min.js'></script>
+        <script type='text/javascript' src='/lib/angular-touch/angular-touch.min.js'></script>
+        <script type='text/javascript' src='/lib/angular-bootstrap/ui-bootstrap-tpls.min.js'></script>
         <!-- Application -->
         <script type='text/javascript' src='/controller/application.js'></script>
         <script type='text/javascript' src='/controller/config.js'></script>
@@ -35,9 +35,11 @@
         <!-- Page Controllers -->
         <script type='text/javascript' src='/controller/index.js'></script>
         <!-- Stylesheets -->
-        <link rel="stylesheet" href="/lib/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="/lib/bootstrap-material-design/dist/bootstrap-material-design.min.css"/>
     </head>
     <body ng-app='UIBProjectTemplate' ng-controller="index">
-        <div ui-view></div>
+        <div class='container-fluid'>
+            <div ui-view></div>
+        </div>
     </body>
 </html>

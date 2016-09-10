@@ -19,6 +19,7 @@ var app = angular.module(
     'UIBProjectTemplate', [
         'ngAnimate',
         'ngCookies',
+        'ngTouch',
         'ui.router',
         'ui.bootstrap'
     ]
