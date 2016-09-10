@@ -17,10 +17,11 @@
 
 var app = angular.module(
     'UIBProjectTemplate', [
+        'ui.bootstrap',
+        'ui.router',
         'ngAnimate',
         'ngCookies',
+        'ngMessages',
         'ngTouch',
-        'ui.router',
-        'ui.bootstrap'
     ]
 );

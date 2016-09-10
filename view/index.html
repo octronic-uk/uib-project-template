@@ -1,0 +1,66 @@
+<!--
+    octronic/uib-project-template/index.html
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<html lang="en">
+    <head>
+
+        <title>UIB Project Template</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <!-- Libraries -->
+        <script src="/lib/angular/angular.min.js"></script>
+        <script src="/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+        <script src="/lib/angular-messages/angular-messages.min.js"></script>
+        <script src="/lib/angular-animate/angular-animate.min.js"></script>
+        <script src="/lib/angular-touch/angular-touch.min.js"></script>
+        <script src="/lib/angular-cookies/angular-cookies.min.js"></script>
+        <script src="/lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="/view/css/bootstrap-paper.min.css">
+
+        <!-- Application -->
+        <script type='text/javascript' src='/controller/application.js'></script>
+        <script type='text/javascript' src='/controller/config.js'></script>
+
+        <!-- Services -->
+        <script type='text/javascript' src='/controller/api_service.js'></script>
+        <script type='text/javascript' src='/controller/cookie_service.js'></script>
+
+        <!-- Page Controllers -->
+        <script type='text/javascript' src='/controller/index.js'></script>
+
+    </head>
+
+    <body ng-app='UIBProjectTemplate' ng-controller="index">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#home">UIB Project Template</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                </div>
+            </div>
+        </nav>
+        <div class='container-fluid'>
+            <div ui-view></div>
+        </div>
+    </body>
+</html>
