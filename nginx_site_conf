@@ -16,8 +16,7 @@
 #
 
 server {
-	listen 80 default_server;
-	listen [::]:80 default_server;
+	listen 0.0.0.0:80 default_server;
 
 	root /Users/Ashley/Software/uib-project-template.git;
 
